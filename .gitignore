@@ -1,2 +1,3 @@
 # ignore node_modules directory while adding all files to git. As node modules takes lots of space
 node_modules/
+.env

@@ -33,5 +33,9 @@ const menuRouter=require('./routes/menuRouter')
 app.use('/person',personRouter)
 app.use('/menu',menuRouter)
 
+require('dotenv').config()
+const PORT=process.env.PORT ||3000
 // our server is active at port 3000 ie at adress http://localhost:3000
-app.listen(3000);
+app.listen(PORT,()=>{
+  console.log('Listening to port')
+});
