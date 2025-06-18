@@ -1,11 +1,11 @@
 // mongoose acts as a mediator between mongodb and node.js
 const mongoose=require('mongoose')
-
+require('dotenv').config() //imported .env file
 // define the mongodb connection url
-// const mongoURL=process.env.MONGODB_URL_LOCAL
-require('dotenv').config()
+const mongoURL=process.env.MONGODB_URL_LOCAL
+
 // below url is mongo atlas url online
-const mongoURL=process.env.MONGODB_URL
+// const mongoURL=process.env.MONGODB_URL
 
 // now setup mongoose connection
 mongoose.connect(mongoURL)

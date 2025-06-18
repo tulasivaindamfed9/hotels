@@ -3,7 +3,7 @@
 const express=require('express')
 const router=express.Router()
 // importing person model from person.js file
-const person = require("../person");
+const person = require("../models/person");
 
 // POST route to add a person
 router.post("/", async (req, res) => {

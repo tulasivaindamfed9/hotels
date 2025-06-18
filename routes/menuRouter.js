@@ -1,7 +1,7 @@
 // importing express router from express
 const express=require('express')
 const router=express.Router()
-const MenuItem = require("../MenuItem");
+const MenuItem = require("../models/MenuItem");
 
 // POST route to add menu items
 router.post("/", async (req, res) => {
